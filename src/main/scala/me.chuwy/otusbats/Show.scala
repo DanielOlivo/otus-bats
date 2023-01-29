@@ -14,8 +14,8 @@ object Show {
   implicit val stringShow = new Show[String]{
     def show(a: String): String = a
   }
-  implicit val booleanShow = new Show[String]{
-    def show(a: String): String = a.toString()
+  implicit val booleanShow = new Show[Boolean]{
+    def show(a: Boolean): String = a.toString()
   }
 
   // 1.2 Instances with conditional implicit
